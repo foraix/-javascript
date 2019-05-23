@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>\
+    <script type="text/javascript">
+        var obj = {
+            name: "swk",
+            age: 18,
+            gender: "男",
+            sayName: function () {
+                console.log(this.name)
+            }
+        };
+
+        /*
+         * 使用工厂创建对象
+         */
+        function createPerson(name, age) {
+            var obj = new Object();
+            obj.name = name;
+            obj.age = 18;
+            return obj;
+        }
+
+        let object = createPerson("shs", 18);
+        console.log(object)
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

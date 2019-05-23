@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        var obj = {
+            name: "yuan",
+            sex: 1,
+        };
+        function f1(obj) {
+            var sex1 = (obj.sex == 1 ? "男" : "女");
+            console.log("My name is " + obj.name + " and My sex is " + sex1)
+        }
+        f1(obj);
+        
+        (function(a, b) {
+            console.log(a);
+            console.log(b);
+        })(100, 200);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

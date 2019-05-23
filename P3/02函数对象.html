@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        var fun = new Function("console.log('hello');");
+        console.log(fun);
+        fun.hello = "hello";
+        console.log(fun.hello);
+        fun();
+
+        function f1() {
+            console.log("helloA")
+        }
+        f1();
+
+        var f2 = function () {
+            console.log("HelloB")
+        };
+        f2();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
